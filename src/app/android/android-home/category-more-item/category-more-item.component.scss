@@ -1,0 +1,22 @@
+.category-item {
+    width: calc(33.3333vw - 0px);
+    height: calc(33.3333vw - 0px);
+    padding: 42px;
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 0px 0px;
+    transition: all 0.3s;
+    background-image: url(../../../../assets/category-more-holder.png);    
+    background-size: cover;
+}
+
+.category-item:active {
+    // -webkit-transform: rotate(45deg);
+    // transform: rotate(45deg);
+}
+
+.category-item img {
+    width: 100%;
+    height: 100%;
+    // transform: rotate(-45deg);
+}

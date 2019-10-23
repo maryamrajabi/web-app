@@ -1,0 +1,28 @@
+<div class="item-wp" [class.hide]="isHide">
+    <div class="item" (click)="changeItem('/ios/home',2)" [class.active-item]="selectedItem==2">
+      <img [src]="'assets/icons/ios-home'+(selectedItem==2?'':'-d')+'.png'" [class.icon-right]="selectedItem==2"
+        [style.right]="iconRight">
+      <p>صفحه اصلی</p>
+    </div>
+  <div class="item" (click)="changeItem('/ios/search',1)" [class.active-item]="selectedItem==1">
+    <img [src]="'assets/icons/ios-search'+(selectedItem==1?'':'-d')+'.png'" [class.icon-right]="selectedItem==1"
+      [style.right]="iconRight">
+    <p>جستجو</p>
+  </div>
+
+  <div class="item" (click)="changeItem('/ios/category',3)" [class.active-item]="selectedItem==3">
+    <img [src]="'assets/icons/ios-category'+(selectedItem==3?'':'-d')+'.png'" [class.icon-right]="selectedItem==3"
+      [style.right]="iconRight">
+    <p>دسته بندی</p>
+  </div>
+  <div class="item" (click)="changeItem('/ios/profile',0)" [class.active-item]="selectedItem==0">
+      <img [src]="'assets/icons/ios-profile'+(selectedItem==0?'':'-d')+'.png'" [class.icon-right]="selectedItem==0"
+        [style.right]="iconRight">
+      <p>پروفایل</p>
+    </div>
+  <div class="item" (click)="changeItem('/ios/shopping-cart/shopping-bag',4)" [class.active-item]="selectedItem==4">
+    <img [src]="'assets/icons/ios-bag'+(selectedItem==4?'':'-d')+'.png'" [class.icon-right]="selectedItem==4"
+      [style.right]="iconRight">
+    <p>سبد خرید</p>
+  </div>
+</div>

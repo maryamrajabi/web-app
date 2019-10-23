@@ -1,0 +1,57 @@
+/* You can add global styles to this file, and also import other style files */
+
+// .hexagon {
+//     -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+//     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+// }
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@font-face {
+    font-family: iransans;
+    src: url(assets/fonts/iransans/iransansWeb.woff);
+    src: url(assets/fonts/iransans/iransansWeb.ttf);
+}
+
+@font-face {
+    font-family: iransans-bold;
+    src: url(assets/fonts/iransans/iransansWeb_Bold.woff);
+    src: url(assets/fonts/iransans/iransansWeb_Bold.ttf);
+}
+
+@font-face {
+    font-family: iransans-light;
+    src: url(assets/fonts/iransans/iransansWeb_Light.woff);
+    src: url(assets/fonts/iransans/iransansWeb_Light.ttf);
+}
+
+@font-face {
+    font-family: iransans-medium;
+    src: url(assets/fonts/iransans/IRANSansWeb_Medium.woff);
+    src: url(assets/fonts/iransans/iransansWeb_Medium.ttf);
+}
+
+@font-face {
+    font-family: iransans-ultralight;
+    src: url(assets/fonts/iransans/iransansWeb_UltraLight.woff);
+    src: url(assets/fonts/iransans/iransansWeb_UltraLight.ttf);
+}
+@font-face {
+    font-family: geometos-rounded;
+    src: url(assets/fonts/Geometos_Rounded.ttf);
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('assets/fonts/icomoon.eot?fr2c01');
+    src: url('assets/fonts/icomoon.eot?fr2c01#iefix') format('embedded-opentype'), url('assets/fonts/icomoon.ttf?fr2c01') format('truetype'), url('assets/fonts/icomoon.woff?fr2c01') format('woff'), url('assets/fonts/icomoon.svg?fr2c01#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    direction: rtl!important;
+    text-align: right;
+    font-family: iransans;
+    margin: 0;
+}
+html, body { height: 100%; }

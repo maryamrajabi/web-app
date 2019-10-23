@@ -1,0 +1,20 @@
+<div class="shadow-wp">
+
+  <div class="top">
+    <span class="factor-number-label">شماره فاکتور</span>
+  </div>
+
+  <div class="factors-wp">
+
+    <prefactor *ngFor="let product of productOrders" [data]="product"></prefactor>
+
+  </div>
+
+  <div class="check-btn" (click)="goToPrePayment()">
+    <p class="check-btn-text">ورود به درگاه و پرداخت</p>
+    <span class="check-btn-price">2,394,012
+      <span class="toman">تومان</span>
+    </span>
+  </div>
+
+</div>

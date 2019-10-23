@@ -1,0 +1,20 @@
+:host {
+    display: inline-block;
+    background-color: #ededf3;
+}
+
+.soft {
+    width: calc(33.3333vw - 15px);
+    max-width: 110px;
+    height: calc(33.3333vw - 15px);
+    max-height: 110px;
+    margin: 0px 7.5px;
+}
+
+.slicy {
+    width: calc(33.3333vw - 15px);
+    max-width: 110px;
+    height: calc(33.3333vw - 70px);
+    max-height: 55px;
+    margin: 7.5px;
+}

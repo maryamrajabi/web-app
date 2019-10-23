@@ -1,0 +1,78 @@
+<span class="page-title">سبد خرید</span>
+<img src="assets/images/shop-top-bg.png" class="header">
+<img src="assets/icons/arrow-left-white.svg" class="back" (click)="back()">
+
+<div class="step-wp">
+
+  <div class="circle-wp">
+    <div class="circle-step-wp">
+      <span class="circle-shadow" style="
+        margin: 0px;
+    ">
+        <span class="circle" [class.checked]="currentStep>=1">
+          <img [src]="getStepIcon(0)" class="circle-icon">
+        </span>
+      </span>
+      <p style="
+        font-size: 10px;
+        color: #ffffff;
+        text-align: center;
+        width: 48px;
+        margin: 2px 0px;
+        font-weight: bold;
+    " [class.text-checked]="currentStep>=1">سبد خرید</p>
+    </div>
+
+    <span class="hrd" [class.border-checked]="currentStep>=1" style="
+    margin: 24px -24px;
+"></span>
+
+  </div>
+
+  <div class="circle-wp">
+    <div class="circle-step-wp" style="
+    width: 100%;
+">
+
+      <span class="circle-shadow">
+        <span class="circle" [class.checked]="currentStep>=2">
+          <img [src]="getStepIcon(1)" class="circle-icon">
+        </span>
+      </span>
+      <p style="
+    font-size: 10px;
+    color: #ffffff;
+    text-align: center;
+    margin: 2px 0px;
+    font-weight: bold;
+" [class.text-checked]="currentStep>=2">پیش فاکتور</p>
+    </div>
+    <span class="hrd" [class.border-checked]="currentStep>=2" style="
+    margin: 24px -60px;
+"></span>
+
+
+  </div>
+
+  <div class="circle-wp">
+    <div class="circle-step-wp" style="
+    margin: 0px;
+    float: left;
+">
+
+      <span class="circle-shadow">
+        <span class="circle" [class.checked]="currentStep>=3">
+          <img [src]="getStepIcon(2)" class="circle-icon">
+        </span>
+      </span>
+      <p style="
+    font-size: 10px;
+    color: #ffffff;
+    text-align: left;
+    margin: 2px 8px;
+    font-weight: bold;
+" [class.text-checked]="currentStep>=2">پرداخت</p>
+    </div>
+  </div>
+
+</div>

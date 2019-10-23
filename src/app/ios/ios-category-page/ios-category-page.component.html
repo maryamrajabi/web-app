@@ -1,0 +1,29 @@
+<div class="row header">
+  <div class="col-6">
+    <span class="title">همه دسته بندی ها</span>
+  </div>
+  <div class="col-6">
+    <img src="assets/icons/arrow-left-gray.svg" class="back" (click)="back()">
+  </div>
+</div>
+<div class="row" style="overflow: hidden;height: 48px;box-sizing: border-box;">
+  <div class="col-12">
+    <span class="filter-icon">
+      <img src="assets/icons/filter.svg">
+    </span>
+    <span class="filter-text" (click)="openFilter()">
+      <img src="assets/icons/filter-2.svg">
+      <p>فیلتر</p>
+    </span>
+    <div class="search-wp">
+      <input type="text" placeholder="جستجو میانمحصولات و برند ها" class="search">
+      <img src="assets/icons/search-btn.png" class="search-btn">
+    </div>
+  </div>
+</div>
+
+<div class="wp">
+  <category-list-item *ngFor="let category of categories" [data]="category"></category-list-item>
+</div>
+
+<filter-modal #filterModal></filter-modal>

@@ -1,0 +1,35 @@
+<div class="wp">
+    <!-- cdkDragBoundary=".wp" cdkDragLockAxis="x" cdkDrag -->
+  <div class="half-circle" [style.right]="right" >
+    <div class="circle" (click)="changePosition($event)"></div>
+    <!-- <div class="shape-right">
+      <div class="big-circle-right"></div>
+    </div>
+    <div class="shape-left">
+      <div class="big-circle-left"></div>
+    </div> -->
+  </div>
+
+  <div class="item-wp">
+    <div class="item" (click)="changeItem(0)">
+      <img src="assets/icons/menu2.svg" [class.icon-right]="selectedItem==0" [style.right]="iconRight">
+      <p>منو</p>
+    </div>
+    <div class="item" (click)="changeItem(1)">
+      <img src="assets/icons/search.svg" [class.icon-right]="selectedItem==1" [style.right]="iconRight">
+      <p>جستجو</p>
+    </div>
+    <div class="item" (click)="changeItem(2)">
+      <img src="assets/icons/menu.svg" [class.icon-right]="selectedItem==2" [style.right]="iconRight">
+      <p>صفحه اصلی</p>
+    </div>
+    <div class="item" (click)="changeItem(3)">
+      <img src="assets/icons/profile.svg" [class.icon-right]="selectedItem==3" [style.right]="iconRight">
+      <p>پروفایل</p>
+    </div>
+    <div class="item" (click)="changeItem(4)">
+      <img src="assets/icons/shop.svg" [class.icon-right]="selectedItem==4" [style.right]="iconRight">
+      <p>سبد خرید</p>
+    </div>
+  </div>
+</div>

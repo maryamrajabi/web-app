@@ -1,0 +1,30 @@
+<div class="shadow-wp">
+
+  <div class="top">
+    <span class="factor-number-label">شماره فاکتور</span>
+    <span class="factor-amount-wp">
+      <span>
+        مبلغ کل فاکتور
+      </span>
+      <span class="amount">
+        2,150,000
+        <span class="toman">تومان</span>
+      </span>
+    </span>
+  </div>
+
+  <div class="factors-wp">
+
+    <factor *ngFor="let product of productOrders" [data]="product" (onDelete)="onDeleteFactor($event)"></factor>
+
+
+  </div>
+
+  <div class="check-btn" (click)="goToPreFactor()">
+    <p class="check-btn-text">صدور پیش فاکتور و پرداخت</p>
+    <span class="check-btn-price">2,394,012
+      <span class="toman">تومان</span>
+    </span>
+  </div>
+
+</div>

@@ -1,0 +1,163 @@
+.one-half {
+    width: 50%;
+    overflow: hidden;
+    display: inline-block
+}
+
+.factor-image {
+    width: 100pt;
+    display: block;
+    margin: auto;
+}
+
+.factor {
+    background-color: #ffffff;
+    width: 100vw;
+    margin-top: -8px;
+    min-height: 64px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid rgb(230, 230, 230);
+    border-right: none;
+    border-left: none;
+    padding: 10px 0px;
+    display: flex;
+}
+
+.factor-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin: 10px;
+    color: rgb(4, 4, 15);
+}
+
+.factor-brand {
+    color: #757575;
+    display: block;
+    margin: 10px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.factor-seller {
+    color: #757575;
+    display: block;
+    margin: 10px;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.shipping-duration {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px;
+    color: #04040f;
+    margin-top: 35px;
+    display: block;
+}
+
+.price-label {
+    font-size: 10px;
+    font-weight: bold;
+    color: rgb(166, 166, 166);
+    margin-right: 10px;
+}
+
+.price {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    margin: 4px 0px;
+    margin-left: 20px;
+    color: rgb(166, 166, 166);
+    text-decoration: line-through;
+}
+
+.off-price-label {
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.off-price {
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    color: rgba(71, 71, 71, 1);
+    margin: 4px 0px;
+    margin-left: 20px;
+}
+
+.controller-wp {
+    color: rgb(4, 4, 15);
+    margin: 8px 0px;
+    margin-right: 4px;
+}
+
+.controller {
+    background-color: rgb(240, 240, 245);
+    display: inline-block;
+    border-radius: 4px;
+
+}
+
+.unit {
+    background-color: #f0f0f5;
+    display: inline-block;
+    font-size: 9px;
+    padding: 7px 4px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
+    height: 24px;
+    margin: 0px 4px;
+}
+
+.ctrl {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin: 2px 4px;
+}
+
+.controller-input {
+    outline: none;
+    width: 78px;
+    height: 24px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 14px;
+}
+
+.toman {
+    font-size: 60%;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px;
+    font-weight: normal;
+}
+
+.save-btn {
+    border: 1px solid #00aeef;
+    color: #00aeef;
+    font-size: 11px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 10px;
+}
+
+.remove-btn {
+    border: 1px solid #898989;
+    color: #898989;
+    background-color: #ebebeb;
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-align: center;
+    display: inline-block;
+    margin: 5px 10px;
+    line-height: 16px;
+}

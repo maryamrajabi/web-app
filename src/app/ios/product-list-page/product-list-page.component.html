@@ -1,0 +1,42 @@
+<div class="row header">
+  <div class="col-6">
+    <span class="title">اقلام دان</span>
+  </div>
+  <div class="col-6">
+    <img src="assets/icons/arrow-left-gray.svg" class="back" (click)="back()">
+  </div>
+</div>
+<div class="row" style="overflow: hidden;height: 48px;box-sizing: border-box;">
+  <div class="col-12">
+    <div class="search-wp">
+      <input type="text" placeholder="جستجو میانمحصولات و برند ها" class="search">
+      <img src="assets/icons/search-btn.png" class="search-btn">
+    </div>
+  </div>
+</div>
+<div class="row" style="overflow: hidden;box-sizing: border-box;">
+    <product-list-slider [data]="slider"></product-list-slider>
+
+</div>
+
+<div class="row" style="overflow: hidden;height: 48px;box-sizing: border-box;">
+  <div class="col-12">
+    <span class="filter-icon">
+      <img src="assets/icons/filter.svg">
+    </span>
+    <span class="filter-text" (click)="openFilter()">
+      <img src="assets/icons/filter-2.svg">
+      <p>فیلتر</p>
+    </span>
+    <div class="filter-tag-wp">
+      <span class="filter-tag">برند
+        <img src="assets/icons/close.svg" class="close-tag">
+      </span>
+    </div>
+  </div>
+</div>
+<div class="wp">
+  <product *ngFor="let product of products" [data]="product" (click)="goToProduct(product.id)"></product>
+</div>
+
+<product-filter-modal #filterModal></product-filter-modal>

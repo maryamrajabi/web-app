@@ -1,0 +1,13 @@
+<div class="profile-header">
+  <span class="profile-image"></span>
+  <span class="welcome">خوش آمدید</span>
+  <span class="fully-btn">ورود</span>
+  <span class="fully-btn">ثبت نام</span>
+  <img src="assets/icons/arrow-left-white.svg" class="back" (click)="back()">
+</div>
+<div class="list">
+  <div class="list-item" *ngFor="let item of listItem;let i = index" (click)="navigate(item.link)">
+    <img [src]="item.icon" class="list-item-icon">
+    <span class="list-item-text">{{item.text}}</span>
+  </div>
+</div>

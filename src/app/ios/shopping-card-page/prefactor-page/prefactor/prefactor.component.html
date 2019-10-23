@@ -1,0 +1,32 @@
+<div class="factor">
+
+  <div class="two-fifth">
+
+    <h3 class="factor-title">{{product.product.name}}</h3>
+    <img [src]="product.product.product_galleries[0].photo_large_rectangle" class="factor-image">
+
+  </div>
+
+  <div class="one-fifth">
+    <p class="value-label">مقدار</p>
+    <span class="value">{{data.quantity}}</span>
+    <p class="unit">کیلوگرم</p>
+  </div>
+
+  <div class="two-fifth">
+    <div style="margin: 4px 0px;">
+      <span class="price-label">قیمت</span>
+      <span class="price">14,400
+        <span class="toman">تومان</span>
+      </span>
+    </div>
+    <div style="margin: 4px 0px;margin-top: 8px;">
+      <span class="off-price-label">قیمت</span>
+      <span class="off-price">{{product.price * data.quantity}}
+        <span class="toman">تومان</span>
+      </span>
+    </div>
+    <span class="more-btn">مشاهده بیشتر</span>
+
+  </div>
+</div>

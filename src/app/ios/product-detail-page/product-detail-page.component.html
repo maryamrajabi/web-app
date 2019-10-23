@@ -1,0 +1,107 @@
+<img src="assets/images/b.png" class="product-image">
+<img src="assets/icons/arrow-left-black.svg" class="back" (click)="back()">
+<img src="assets/icons/heart.svg" class="like" (click)="like()">
+
+<div class="wp">
+
+  <div class="tab-list">
+    <span class="tab" (click)="changeTab(0)" [class.active-tab]="tabIndex==0">اطلاعات محصول</span>
+    <span class="tab" (click)="changeTab(1)" [class.active-tab]="tabIndex==1">نظرات</span>
+    <span class="tab" (click)="changeTab(2)" [class.active-tab]="tabIndex==2">بهترین پیشنهادات</span>
+    <div class="tab-content" *ngIf="tabIndex==0">
+      <h1 class="product-name">{{product.product.name}}</h1>
+      <span class="product-en-title">{{product.product.name}}</span>
+      <h3 class="product-short-brief">{{product.description}}</h3>
+      <div class="hr"></div>
+      <div style="overflow: hidden;margin: 15px 0px;">
+        <span style="font-size: 12px;margin: 0px 10px;margin-right: 5px;">زمان تحویل :{{product.submission_delivery}}
+          روز
+          کاری</span>
+      </div>
+
+      <span style="font-size: 12px;margin: 0px 10px;"> فروشنده : مصطفی سعادت نیا</span>
+      <span style="font-size: 12px;margin: 0px 10px;">برند : {{product.brand.fa_name}}</span>
+      <!-- <img [src]="product.brand.photo_rectangle" class="brand-logo"> -->
+      <div style="
+      overflow: hidden;
+      margin: 15px 0px;
+      background-color: rgba(230, 230, 235, 0.50);
+      border-radius: 15px;
+      line-height: 36px;
+      ">
+        <span style="font-size: 12px;
+        float: left;
+        text-align: center;
+        width: calc(100% - 182px);">حداقل سفارش : 100 کیلوگرم</span>
+        <span class="order-controller">
+          <span class="plus-ctrl" (click)="increaseOrderNumber(product.product.quantity_step)">
+            <img src="assets/icons/add.svg" class="ctrl-icon">
+          </span>
+          <input type="number" class="order-input" placeholder="میزان سفارش" [(ngModel)]="orderNumber">
+          <span class="minus-ctrl" (click)="decreaseOrderNumber(product.product.quantity_step)">
+            <img src="assets/icons/minus.svg" class="ctrl-icon">
+          </span>
+        </span>
+      </div>
+
+      <div class="hr"></div>
+
+      <div style="overflow: hidden;margin: 15px 0px;">
+        <span style="font-size: 12px;margin: 0px 10px;margin-right: 5px;">میزان تخفیف : </span>
+        <span style="
+        background-color: rgb(252,67,53);
+        color: #ffffff;
+        padding: 0px 5px;
+        height: 25px;
+        font-size: 16px;
+        width: 86px;
+        display: inline-block;
+        text-align: center;
+        line-height: 26px;
+        border-radius: 16px;
+        float: left;
+        margin-left: 15px;
+    ">{{product.off}} درصد</span>
+      </div>
+
+      <div>
+        <span style="font-size: 12px;margin: 0px 10px;margin-right: 5px;">قیمت</span>
+        <span style="
+        float: left;
+        text-decoration: line-through;
+        color: #a6a6a6;
+        font-size: 16px;
+        margin-left: 20px;
+    ">{{product.price}}
+          <span class="toman">تومان</span>
+        </span>
+      </div>
+      <div>
+        <span style="font-size: 12px;margin: 0px 10px;margin-right: 5px;">قیمت پس از تخفیف</span>
+        <span style="
+        float: left;
+        font-size: 18px;
+        font-weight: bold;
+        color: rgba(71, 71, 71, 1);
+        margin-left: 20px;
+    ">{{product.price * (100 - product.off) / 100}}
+          <span class="toman">تومان</span>
+        </span>
+      </div>
+    </div>
+    <div class="tab-content" *ngIf="tabIndex==1">
+      tab2
+    </div>
+    <div class="tab-content" *ngIf="tabIndex==2">
+      tab3
+    </div>
+  </div>
+
+  <div class="bottom-wp">
+    <span class="add-btn" (click)="addToCart()">اضافه به لیست خرید</span>
+    <span class="buy-btn" (click)="goToCart()">خرید و پرداخت</span>
+  </div>
+</div>
+<div class="popup" [class.show-popup]="isAddEvent">
+  <h1>به سبد خرید اضافه شد</h1>
+</div>

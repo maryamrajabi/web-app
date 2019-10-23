@@ -1,0 +1,153 @@
+.shadow-wp {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    position: absolute;
+    top: 120px;
+    background-color: #d7f3fc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+.code-checker {
+    display: block;
+    margin: 20px auto;
+    background-color: #00aeef;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    width: 175px;
+    height: 48px;
+    box-shadow: 0px 1px 1px 0px #000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.finance-detail {
+    background-color: rgb(236, 249, 254);
+    color: #535353;
+    width: 279px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 9.5px 25px 0px rgba(0, 0, 0, 0.23);
+}
+
+.btn-close {
+    background-color: #ecf9fe;
+    box-shadow: 0px 9.5px 25px 0px rgba(0, 0, 0, 0.23);
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+    width: 279px;
+    margin: 10px auto;
+    color: rgb(83, 83, 83);
+    border-radius: 4px;
+}
+
+.finance-detail .section {
+    text-align: center;
+    padding: 15px;
+}
+
+.section h3 {
+    font-size: 16px;
+    height: 30px;
+    line-height: 42px;
+}
+
+.section h4 {
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+}
+
+.price {
+    font-size: 16px;
+    color: rgb(126, 126, 126);
+    margin-top: 40px;
+    display: block;
+}
+
+.final-price {
+    color: rgb(0, 166, 81);
+    font-weight: bold;
+    margin-top: 40px;
+    display: block;
+    font-size: 16px;
+}
+
+.main-title {
+    color: rgb(0, 169, 157);
+    font-weight: bold;
+}
+
+
+
+.circle-wp {}
+
+.circle-shadow {
+    width: 48px;
+    height: 48px;
+    background-color: rgb(42, 183, 167);
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.circle {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 6px auto;
+    padding: 8px;
+}
+
+
+.circle-icon {
+    width: 100%;
+    display: block;
+}
+
+
+.checked {
+    background-color: rgb(22, 223, 209) !important;
+}
+
+.timer {
+    width: 172px;
+    margin: auto;
+    direction: ltr;
+}
+
+.one-fourth {
+    width: 25%;
+    display: inline-block;
+    color: #2e2e2e;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: cursive;
+    text-align: center;
+    margin: 0px auto;
+}
+.counter
+{
+    text-align: center;
+    margin: 0px auto;
+}
+.subtitle {
+    font-size: 10px;
+    color: #535353;
+    font-family: iransans;
+    text-align: center;
+    margin: 0px auto;
+
+}

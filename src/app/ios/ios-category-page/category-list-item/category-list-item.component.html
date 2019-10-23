@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="col-12">
+    <div class="category" (click)="toggle()">{{data.name}}
+      <img [src]="isOpen?openModeIcon:closeModeIcon" class="category-plus">
+    </div>
+    <div class="sub-category-wp" [class.sub-category-active]="isOpen">
+
+      <div class="row" *ngFor="let sub of data.sub_categories" (click)="productList()">
+        <div class="col-12">
+          <div class="sub-category">
+            {{sub.name}}
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

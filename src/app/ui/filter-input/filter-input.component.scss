@@ -1,0 +1,47 @@
+.filter-section-wp {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+.filter-section-wp-open
+{
+    height: auto!important;
+
+}
+.filter-section-wp:hover {
+    background-color: #f5f6f8;
+}
+
+.category-label {
+    margin: 0px 10px;
+    font-size: 12px;
+}
+
+.price {
+    width: 49px;
+    height: 24px;
+    border: 1px solid #dcdcdc;
+    border-radius: 4px;
+    outline: none;
+    text-align: center;
+    font-size: 12px;
+}
+
+.dash {
+    color: #959595;
+    margin: 0px 8px;
+    font-size: 14px;
+}
+
+.inputs {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}

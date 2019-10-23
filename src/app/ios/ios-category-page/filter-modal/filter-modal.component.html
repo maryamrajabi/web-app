@@ -1,0 +1,29 @@
+<div class="filter-box" [class.filter-open]="showModal">
+  <div class="filter-header">فیلتر</div>
+
+  <div class="filter-categories">
+    <span class="category-label">دسته بندی ها</span>
+    <span class="more-category">
+      مشاهده همه
+      <img src="assets/icons/arrow-left-gray.svg" class="more-icon">
+    </span>
+  </div>
+<div class="filters-wp">
+  <div class="filter-section-wp">
+    <span class="category-label">زیر دسته ها</span>
+  </div>
+
+  <div *ngFor="let attr of attributes">
+    <filter-input *ngIf="attr.type =='range'" class="filter-section" [data]="attr"></filter-input>
+    <filter-list *ngIf="attr.type =='list'" [data]="attr"></filter-list>
+    <filter-radio *ngIf="attr.type =='radio'" [data]="attr"></filter-radio>
+  </div>
+
+</div>
+
+
+
+
+  <div class="confirm-filter-btn" (click)="closeFilter()">تایید</div>
+  <div class="delete-filter-btn" (click)="closeFilter()">حذف</div>
+</div>

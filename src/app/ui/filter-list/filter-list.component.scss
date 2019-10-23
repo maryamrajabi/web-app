@@ -1,0 +1,59 @@
+.filter-section-wp {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.filter-section-wp-open {
+    height: auto !important;
+
+}
+
+.filter-section-wp:hover {
+    background-color: #f5f6f8;
+}
+
+.category-label {
+    margin: 0px 10px;
+    font-size: 12px;
+    display: block;
+}
+
+.arrow-down {
+    width: 12px;
+    float: left;
+    margin: 16px 15px;
+    transition: all 0.2s;
+}
+
+.search {
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #17a2b8;
+    height: 36px;
+    width: calc(100% - 40px);
+    margin: 0px auto;
+    margin-bottom: 15px;
+    display: block;
+    border-radius: 2px;
+    padding: 0px 10px;
+    background-color: transparent;
+}
+
+.item-wp {
+    max-height: 138px;
+    overflow: hidden;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.arrow-rotate {
+    transform: rotate(180deg);
+}

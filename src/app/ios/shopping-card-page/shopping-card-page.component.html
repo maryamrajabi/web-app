@@ -1,0 +1,27 @@
+<div *ngIf="!isEmpty()">
+  <!-- <span class="page-title">سبد خرید</span>
+  <img src="assets/images/shop-top-bg.png" class="header">
+  <img src="assets/icons/arrow-left-white.svg" class="back" (click)="back()"> -->
+
+  <factor-steper [currentStep]="factorState"></factor-steper>
+  <router-outlet></router-outlet>
+
+</div>
+<div class="empty" *ngIf="isEmpty()">
+  <span class="page-title">سبد خرید</span>
+  <img src="assets/icons/arrow-left-white.svg" class="back" (click)="back()">
+  <div class="finance-detail">
+    <div class="section">
+      <img src="assets/images/shopping-bag-outline-filled.png" class="circle-icon">
+
+    </div>
+    <div class="section">
+      <h4>سبد خرید شما خالی است</h4>
+    </div>
+  </div>
+  <div class="finance-detail">
+    <div class="section">
+      <h4 class="show-off-btn">مشاهده محصولات تخفیف دار</h4>
+    </div>
+  </div>
+</div>

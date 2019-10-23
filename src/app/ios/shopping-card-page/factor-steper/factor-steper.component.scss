@@ -1,0 +1,96 @@
+.header {
+    width: 100vw;
+    display: block;
+    position: absolute;
+    top: 0px;
+}
+
+.page-title {
+    z-index: 2;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.back {
+    width: 20px;
+    z-index: 2;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+
+
+.step-wp {
+    position: relative;
+    width: 100vw;
+    top: 45px;
+    padding: 0px 15px;
+}
+
+.circle-step-wp {
+    width: 48px;
+    display: inline-block;
+}
+
+.circle-wp {
+    float: right;
+    width: 33.3333%;
+}
+
+.circle-shadow {
+    width: 48px;
+    height: 48px;
+    background-color: rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    text-align: center;
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.circle {
+    width: 36px;
+    height: 36px;
+    background-color: #ffffff;
+    overflow: hidden;
+    display: block;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 6px auto;
+    padding: 8px;
+}
+
+
+.circle-icon {
+    width: 100%;
+    display: block;
+}
+
+
+.hrd {
+    width: calc(100% - 30px);
+    height: 2px;
+    display: inline-block;
+    float: left;
+    border-bottom: 2px dashed rgba(255, 255, 255, 0.7);
+    transition: all 0.3s;
+}
+
+
+.checked {
+    background-color: rgb(27, 212, 117) !important;
+}
+
+.border-checked {
+    border-bottom: 2px solid rgba(0, 255, 0, 1) !important;
+}
+
+.text-checked {
+    color: rgb(0, 140, 0) !important;
+}

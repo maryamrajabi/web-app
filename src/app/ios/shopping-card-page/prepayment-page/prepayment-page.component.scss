@@ -1,0 +1,113 @@
+.shadow-wp {
+    width: 100vw;
+    height: calc(100vh - 120px);
+    position: absolute;
+    top: 120px;
+    background-color: #d7f3fc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.check-btn {
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(76, 217, 100);
+    position: fixed;
+    bottom: 0px;
+}
+
+.check-btn-text {
+    display: block;
+    margin: 0px 20px;
+    font-size: 18px;
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+}
+
+
+.discount-code {
+    display: block;
+    width: 266.5px;
+    height: 59px;
+    background-color: #86dffc;
+    color: rgba(46, 49, 146, 0.7);
+    margin: 24px auto;
+    text-align: center;
+    font-size: 14px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.21) inset;
+    outline: none;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(46, 49, 146, 0.25);
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgba(46, 49, 146, 0.25);
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgba(46, 49, 146, 0.25);
+}
+
+.code-checker {
+    display: block;
+    margin: 20px auto;
+    background-color: #00aeef;
+    outline: none;
+    border: none;
+    color: #ffffff;
+    width: 175px;
+    height: 48px;
+    box-shadow: 0px 1px 1px 0px #000;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.finance-detail {
+    background-color: #ffffff;
+    color: #535353;
+    width: 279px;
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.finance-detail .section {
+    text-align: center;
+    border-bottom: 1px solid rgb(172, 172, 172);
+    padding: 15px;
+}
+
+.section h3 {
+    font-size: 16px;
+    height: 30px;
+    line-height: 42px;
+}
+
+.section h4 {
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+}
+
+.price {
+    font-size: 16px;
+    color: rgb(126, 126, 126);
+    margin-top: 40px;
+    display: block;
+}
+
+.final-price {
+    color: rgb(0, 166, 81);
+    font-weight: bold;
+    margin-top: 40px;
+    display: block;
+    font-size: 16px;
+}
+

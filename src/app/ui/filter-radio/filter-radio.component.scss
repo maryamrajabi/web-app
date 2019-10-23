@@ -1,0 +1,40 @@
+.filter-section-wp {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    transition: all 0.3s;
+    overflow: hidden;
+}
+
+.filter-section-wp-open {
+    height: auto !important;
+
+}
+
+.filter-section-wp:hover {
+    background-color: #f5f6f8;
+}
+
+.category-label {
+    margin: 0px 10px;
+    font-size: 12px;
+}
+
+.inputs {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+toggle-btn {
+    padding: 5px 0px;
+    display: block;
+    line-height: 54px;
+    height: 44px;
+    overflow: hidden;
+}

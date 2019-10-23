@@ -1,0 +1,42 @@
+<div class="factor" *ngIf="data">
+
+  <div class="one-half">
+
+    <h3 class="factor-title">{{product.product.name}}</h3>
+    <span class="factor-brand">
+      برند : {{product.brand.fa_name}}
+    </span>
+    <span class="factor-seller">
+      فروشنده : پروتینی مقدم
+    </span>
+    <span class="shipping-duration">زمان تحویل : 2 - 4 روز کاری</span>
+    <span class="save-btn">ذخیره در لیست</span>
+    <span class="remove-btn" (click)="deleteFactor()">حذف</span>
+  </div>
+
+  <div class="one-half">
+
+    <img [src]="product.product.product_galleries[0].photo_large_rectangle" class="factor-image">
+    <div style="margin: 4px 0px;">
+      <span class="price-label">قیمت</span>
+      <span class="price">{{product.price}}
+        <span class="toman">تومان</span>
+      </span>
+    </div>
+    <div style="margin: 4px 0px;">
+      <span class="off-price-label">قیمت با تخفیف</span>
+      <span class="off-price">{{product.price * (100 - product.off) / 100}}
+        <span class="toman">تومان</span>
+      </span>
+    </div>
+    <div class="controller-wp">
+      <span class="controller">
+        <img src="assets/icons/add-dark.svg" class="ctrl" (click)="increase(product.product.quantity_step)">
+        <input type="number" class="controller-input" [(ngModel)]="data.quantity">
+        <img src="assets/icons/minus-dark.svg" class="ctrl" (click)="decrease(product.product.quantity_step)">
+      </span>
+      <span class="unit">{{product.unit.name}}</span>
+    </div>
+  </div>
+
+</div>

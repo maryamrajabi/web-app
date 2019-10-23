@@ -1,0 +1,81 @@
+.shadow-wp {
+    width: 100vw;
+    height: calc(100vh - 112px);
+    position: absolute;
+    top: 112px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.top {
+    margin-bottom: 8px;
+}
+
+.factor-number-label {
+    font-size: 14px;
+    line-height: 34px;
+    margin: 0px 10px;
+    color: #171717;
+}
+
+.amount {
+    font-weight: bold;
+}
+
+.factor-amount-wp {
+    display: inline-block;
+    background-color: #ffffff;
+    font-size: 12px;
+    float: left;
+    margin: 5px 15px;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: rgb(0, 174, 239);
+}
+
+
+
+.factors-wp {
+    width: 100vw;
+    height: calc(100vh - 154px - 40pt);
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #ffffff;
+    z-index: 22;
+    position: absolute;
+    top: 34px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.check-btn {
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(76, 217, 100);
+    position: fixed;
+    bottom: 0px;
+}
+
+.check-btn-text {
+    display: inline-block;
+    float: right;
+    margin: 0px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 40px;
+}
+
+.check-btn-price {
+    background-color: #00a651;
+    float: left;
+    height: 27px;
+    line-height: 29px;
+    display: inline-block;
+    color: #ffffff;
+    padding: 0px 10px;
+    margin: 7px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}

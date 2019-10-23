@@ -1,0 +1,24 @@
+<div class="box-head">
+  <h6>جستجو</h6>
+  <img src="../../../assets/icons/chev-left.png" (click)="goToLink('/ios/home')" class="icon1" name="chevron-left"/>
+  <br /> <br />  <br />
+
+</div>
+<div class="box-search">
+  <div class="search">
+    <input (keyup.enter)="fetchProducts()"
+           class="input" [(ngModel)]="item" required placeholder="جستجو میان محصولات و برندها" />
+    <img src="../../../assets/icons/search3.png" class="icon" name="search" (click)="fetchProducts()" />
+  </div>
+</div>
+
+<p class="history">تاریخچه جستجو</p>
+<ul *ngIf="resultSearch && resultSearch.length">
+  <li *ngFor="let product of resultSearch">
+    <a>{{product.name}}</a>
+  </li>
+</ul>
+<p class="nores" style="position: absolute; right:5px; color:rgba(87, 83, 83, 0.781);"
+   *ngIf="condition()">
+  نتیجه ای یافت نشد!
+</p>

@@ -1,0 +1,156 @@
+// --------------------------
+.filter-box {
+    width: 100vw;
+    height: calc(100vh - 48px);
+    position: absolute;
+    bottom: -100vh;
+    left: 0px;
+    background-color: #ffffff;
+    text-align: center;
+    transition: all 0.3s;
+    overflow: scroll;
+    z-index: 999;
+}
+
+.filter-open {
+    bottom: 0;
+    // top: 0;
+}
+
+.confirm-filter-btn {
+    background-color: #5cd5a5;
+    border-radius: 8px;
+    color: #ffffff;
+    height: 42px;
+    width: calc(50% - 30px);
+    text-align: center;
+    line-height: 42px;
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.delete-filter-btn {
+    background-color: #c7c7cc;
+    border-radius: 8px;
+    color: #ffffff;
+    height: 42px;
+    width: calc(50% - 30px);
+    text-align: center;
+    line-height: 42px;
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+}
+
+.filter-header {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: center;
+    color: #010101;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.filter-categories {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #b3b3b3;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.filter-subcategory {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #b3b3b3;
+    font-size: 14px;
+    background-color: #f5f6f8;
+    border-bottom: 1px solid #dddddd;
+}
+
+.filter-moreitem {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #b3b3b3;
+    font-size: 14px;
+    background-color: #f5f6f8;
+    border-bottom: 1px solid #dddddd;
+}
+
+.inputs {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+.filter-price {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: #f5f6f8;
+    border-bottom: 1px solid #dddddd;
+}
+
+.filter-section-wp {
+    height: 45px;
+    line-height: 45px;
+    width: 100%;
+    text-align: right;
+    color: #000000;
+    font-weight: bold;
+    font-size: 14px;
+    border-bottom: 1px solid #dddddd;
+    transition: all 0.3s;
+}
+
+.more-category {
+    text-align: left;
+    float: left;
+    margin: 0px 10px;
+    font-size: 12px;
+}
+
+.more-icon {
+    width: 14px;
+}
+
+.category-label {
+    margin: 0px 10px;
+    font-size: 12px;
+}
+
+
+toggle-btn {
+    padding: 5px 0px;
+    display: block;
+    line-height: 54px;
+    height: 44px;
+    overflow: hidden;
+}
+
+.filter-section-wp:hover {
+    background-color: #f5f6f8;
+}
+
+
+.filters-wp {
+    width: 100%;
+    height: calc(100vh - 200px);
+    overflow: scroll;
+}

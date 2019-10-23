@@ -1,0 +1,12 @@
+<div class="product" >
+  <span class="product-off-label" *ngIf="data.off>0">{{data.off}} %</span>
+  <i class="fa-heart like" [class.far]="!isLike" [class.active-like]="isLike" [class.fas]="isLike"
+    (click)="toggleLike($event)"></i>
+
+  <img [src]="data.product.product_gallery.photo_square" class="product-image">
+  <p class="product-name">{{data.product.name}}</p>
+  <span class="product-owner">{{data.brand.fa_name}}</span>
+  <span class="product-price-off" *ngIf="data.off>0">{{data.price}}</span>
+  <span class="star"><i class="far fa-star"></i>{{3}}/4</span>
+  <span class="product-price">{{(data.price * (100 - data.off))/100}}<span class="toman">{{data.currency}}</span></span>
+</div>

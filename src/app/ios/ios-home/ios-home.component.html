@@ -1,0 +1,82 @@
+<div *ngIf="firstCategory" class="wp">
+  <div class="slider">
+    <img src="assets/sample/1.png" class="banner-img">
+    <input type="text" class="search-input" placeholder="جستجو...">
+    <img src="assets/icons/search-btn.png" class="search-btn">
+  </div>
+  <section class="main">
+    <tab-list [tabs]="tabs"></tab-list>
+    <!-- <h3 class="category-title">دسته بندی ها</h3> -->
+    <category-slider [data]="slider"></category-slider>
+
+
+    <div class="row">
+
+      <div class="col-4">
+        <div class="soft" (click)="goToLink('/ios/product-list')">
+          <p>{{firstCategory[0].name}}</p>
+          <img [src]="firstCategory[0].icon_primary_square" class="category-img" style="
+          width: 64px;
+          position: absolute;
+          left: 8px;
+          bottom: 8px;
+      ">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="soft" (click)="goToLink('/ios/product-list')">
+          <p>{{firstCategory[1].name}}</p>
+          <img [src]="firstCategory[1].icon_primary_square" class="category-img" style="
+          width: 64px;
+          position: absolute;
+          left: 8px;
+          bottom: 8px;
+      ">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="row">
+          <div class="h-half" style="height: 59px;
+          margin-bottom: 2px;" (click)="goToLink('/ios/product-list')">
+            <p>{{firstCategory[2].name}}</p>
+            <img [src]="firstCategory[2].icon_primary_square" class="category-img" style="width: 36px;
+            position: absolute;
+            left: 4px;
+            bottom: 4px;">
+          </div>
+        </div>
+        <div class="row">
+          <div class="h-half" style="height: 59px;
+          margin-top: 2px;" (click)="goToLink('/ios/product-list')">
+            <p>{{firstCategory[3].name}}</p>
+            <img [src]="firstCategory[3].icon_primary_square" class="category-img" style="width: 36px;
+            position: absolute;
+            left: 4px;
+            bottom: 4px;">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-6">
+        <div class="h-half" style="height: 59px;
+      margin-top: 4px;" (click)="goToLink('/ios/product-list')">
+          <p>{{firstCategory[4].name}}</p>
+          <img [src]="firstCategory[4].icon_primary_square" class="category-img" style="width: 36px;
+        position: absolute;
+        left: 4px;
+        bottom: 4px;">
+        </div>
+      </div>
+
+      <div class="col-6">
+        <div class="h-half" style="height: 59px;
+      margin-top: 4px;" (click)="goToLink('/ios/category')">
+          <p style="color:#c6003d">همه دسته بندی ها</p>
+        </div>
+      </div>
+
+    </div>
+  </section>

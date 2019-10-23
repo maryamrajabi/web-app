@@ -1,0 +1,12 @@
+<div class="filter-section-wp" [class.filter-section-wp-open]="isOpen">
+  <span class="category-label" (click)="toggle()">{{data.label}}
+    <img src="assets/icons/arrow-down.svg" class="arrow-down" [class.arrow-rotate]="isOpen">
+  </span>
+  <input *ngIf="data.attribute_values.length>12" type="search" class="search" [(ngModel)]="searchKey"
+    placeholder="جستجو...">
+  <div class="item-wp">
+    <ios-checkbox *ngFor="let d of getData()" [data]="d"></ios-checkbox>
+
+  </div>
+
+</div>

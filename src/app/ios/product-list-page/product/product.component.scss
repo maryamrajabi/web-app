@@ -1,0 +1,120 @@
+.product {
+    width: 50%;
+    height: 218px;
+    margin: -5px 0px;
+    display: inline-block;
+    z-index: 1;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    border: 1px solid #f2f2f7;
+}
+
+.product:hover {
+    // background-color: #fdfdfd;
+    -webkit-box-shadow: 0 2px 17px 0 rgba(0, 0, 0, .09);
+    box-shadow: 0 2px 17px 0 rgba(0, 0, 0, .09);
+    z-index: 11;
+    cursor: pointer;
+}
+
+.product-off-label {
+    width: 46px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    background-color: #fc4349;
+    color: #ffffff;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 10px;
+    padding: 0px 2px;
+}
+
+.product-image {
+    display: block;
+    margin: auto;
+    margin-top: 18px;
+    width: calc(100% - 90px);
+    padding: 8px;
+    height: 70px;
+    margin-bottom: 36px;
+}
+
+.product-name {
+    display: block;
+    width: calc(100% - 30px);
+    font-size: 11px;
+    box-sizing: border-box;
+    margin: 15px;
+    color: #696969;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: center;
+    height: 20px;
+    font-weight: bold;
+
+}
+
+.product-owner {
+    color: #a1a1a1;
+    font-size: 13px;
+    margin: 0px 15px;
+}
+
+.product-price-off {
+    color: #b3b3b3;
+    float: left;
+    margin: 0px 15px;
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.star {
+    color: #626262;
+    font-size: 12px;
+    letter-spacing: 2px;
+    position: absolute;
+    right: 10px;
+    margin-top: 30px;
+}
+
+.star i {
+    font-size: 16px;
+}
+
+.product-price {
+    color: #333333;
+    font-size: 18px;
+    float: left;
+    margin: 5px 15px;
+    display: block;
+    position: absolute;
+    left: 0px;
+}
+
+.like {
+    color: #959595;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.active-like {
+    color: #ff1e26;
+    -webkit-animation: .8s beatHeart;
+    animation: .8s beatHeart;
+}
+
+.toman {
+    font-size: 60%;
+    text-decoration: none;
+    display: inline-block;
+    margin: 0px 2px;
+}

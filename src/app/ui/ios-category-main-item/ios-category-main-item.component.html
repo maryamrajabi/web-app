@@ -1,0 +1,8 @@
+<div *ngIf="mode=='slicy'" class="slicy">
+  <div class="slice">
+    <ng-content></ng-content>
+  </div>
+</div>
+<div *ngIf="mode=='soft'" class="soft">
+  <ng-content></ng-content>
+</div>
